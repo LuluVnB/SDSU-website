@@ -87,10 +87,15 @@ nav img{
     background: #f44336;
     transition: 1s;
 }
-
+nav .fa{
+    display: none;
+}
 @media(max-width: 700px){
     .text-box{
         font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
     }
     .nav-links{
         position: absolute;
@@ -98,8 +103,40 @@ nav img{
         height: 100vh;
         width: 200px;
         top: 0;
-        right: 0;
+        right: -200;
         text-align: left;
         z-index: 2;
+        transition: 1s;
     }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 50px;
+    }
+}
+
+
+/* course  */
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
 }
