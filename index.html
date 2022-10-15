@@ -10,17 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    
+
 </head>
 <body>
 <section class = "header">
     <nav>
 
-        <a href = "index.html"><img src="imgs/logo.png"
-                width="200"
-                height = "50"></a>
+        <a href = "index.html"><img src="imgs/logo.png" width = 100px height = 75px></a>
 
-        <div class = "nav-links">
-            <i class="fa fa-times"></i>
+        <div class = "nav-links" id = "navLinks">
+            <i class="fa fa-times" onclick = "hideMenu()"></i>
+
 
             <ul>
                 <li><a href = "">HOME</a></li>
@@ -30,7 +31,8 @@
                 <li><a href = "">CONTACT</a></li>
             </ul>
         </div>
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" onclick = "showMenu()"></i>
+
 
     </nav>
 <div class="text-box">
@@ -43,6 +45,24 @@
 </div>
     
 </section>
+            <!-- Course -->
+<section class = "course">
+    <h1>Courses We Offer</h1>
+    <p>okokokk blah blah blah blah blah</p>
+</section>
+
+
     
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function showMenu(){
+        navLinks.style.right = "-200";
+    }
+</script>
+
 </body>
 </html>
